@@ -1,3 +1,6 @@
+<html>
+
+<body>
 <a href="Teacher_side\index.html">  for setting quiz   </a>
 <br>
 
@@ -5,7 +8,45 @@
 
 <a href="Quiz\index.html">    for giving test  </a>
 
-
+<br>
 <a href="start_video">    for giving test  </a>
 
+<button onclick="ClassBoard()">White Board</button>
+<button onclick="VideoLecture()">Video Lecture</button>
+<script>
 
+    function ClassBoard()
+    {
+    console.log("Board is running");
+    var child_process = require('child_process');
+
+    child_process.exec('server_board.bat', function(error, stdout, stderr) {
+    console.log(stdout);
+    });
+    var child_process = require('child_process');
+
+    child_process.exec('server_board_launch.bat', function(error, stdout, stderr) {
+    console.log(stdout);
+    });
+    }
+</script>
+
+<script>
+    function VideoLecture()
+    {
+        console.log("Video is running");
+        var child_process = require('child_process');
+
+        child_process.exec('server_video.bat', function(error, stdout, stderr) {
+        console.log(stdout);
+        });
+        var child_process = require('child_process');
+
+        child_process.exec('start_video.bat', function(error, stdout, stderr) {
+        console.log(stdout);
+        });
+    }
+</script>
+</body>
+
+</html>
