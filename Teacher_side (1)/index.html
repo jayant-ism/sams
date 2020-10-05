@@ -10,14 +10,14 @@
 
 <br>
 <a href="start_video">    for giving test  </a>
+<br>
 
-<button onclick="ClassBoard()">White Board</button>
-<button onclick="VideoLecture()">Video Lecture</button>
+<input id="clickMe1" type="button" value="White Board" onclick="doFunction();" />
+<br>
+<input id="clickMe2" type="button" value="Video Lecture" onclick="doFunction();" />
 <script>
 
-    function ClassBoard()
-    {
-    console.log("Board is running");
+document.getElementById("clickMe1").onclick = function () { 
     var child_process = require('child_process');
 
     child_process.exec('server_board.bat', function(error, stdout, stderr) {
@@ -28,25 +28,24 @@
     child_process.exec('server_board_launch.bat', function(error, stdout, stderr) {
     console.log(stdout);
     });
-    }
+ };
+
+document.getElementById("clickMe2").onclick = function () {
+
+    var child_process = require('child_process');
+
+child_process.exec('server_video.bat', function(error, stdout, stderr) {
+    console.log(stdout);
+});
+var child_process = require('child_process');
+
+child_process.exec('start_video.bat', function(error, stdout, stderr) {
+    console.log(stdout);
+});
+};
 </script>
 
-<script>
-    function VideoLecture()
-    {
-        console.log("Video is running");
-        var child_process = require('child_process');
 
-        child_process.exec('server_video.bat', function(error, stdout, stderr) {
-        console.log(stdout);
-        });
-        var child_process = require('child_process');
-
-        child_process.exec('start_video.bat', function(error, stdout, stderr) {
-        console.log(stdout);
-        });
-    }
-</script>
 </body>
 
 </html>
