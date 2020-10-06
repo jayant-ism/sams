@@ -1,37 +1,53 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>class</title>
+    <!-- adding css file-->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="class">
+        <img class="image" src="images/class.jpg" alt="image" />
 
-<body>
-<a href="Teacher_side\index.html">  for setting quiz   </a>
-<br>
+        <button class="btn" id="clickMe1" >Class</button>
+      </div>
+      <div class="video">
+        <img class="image" src="images/video.jpg" alt="image" />
+        <button class="btn" id ="clickMe2">Video Lecture</button>
+      </div>
 
+      <div class="notes">
+        <img class="image" src="images/notes.jpg" alt="image" />
+        <button class="btn">Quiz</button>
+      </div>
 
-
-<a href="Quiz\index.html">    for giving test  </a>
-
-<br>
-<a href="start_video">    for giving test  </a>
-<br>
-
-<input id="clickMe1" type="button" value="White Board" onclick="doFunction();" />
-<br>
-<input id="clickMe2" type="button" value="Video Lecture" onclick="doFunction();" />
-<script>
-
-document.getElementById("clickMe1").onclick = function () {
-    
-
-    window.location.href = "http://localhost:3001/";
-
- };
-
-document.getElementById("clickMe2").onclick = function () {
-   
-    window.location.href = "http://localhost:3000" ;
-
-};
-</script>
+      
 
 
-</body>
 
+    </div>
+
+    <script>
+
+      document.getElementById("clickMe1").onclick = function () {
+          
+      
+          window.location.href = "http://localhost:3001/";
+      
+       };
+      
+      document.getElementById("clickMe2").onclick = function () {
+         
+          window.location.href = "http://localhost:3000" ;
+      
+      };
+      </script>
+      
+
+      
+
+  </body>
 </html>

@@ -97,7 +97,7 @@ function init () {
 }
 
 $(init);
-socket = io.connect('http://localhost:3000');
+socket = io.connect('http://localhost:3001');
     // We make a named event called 'mouse' and write an
     // anonymous callback function
     socket.on('mouse',
