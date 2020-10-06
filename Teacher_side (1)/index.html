@@ -17,31 +17,17 @@
 <input id="clickMe2" type="button" value="Video Lecture" onclick="doFunction();" />
 <script>
 
-document.getElementById("clickMe1").onclick = function () { 
-    var child_process = require('child_process');
+document.getElementById("clickMe1").onclick = function () {
+    
 
-    child_process.exec('server_board.bat', function(error, stdout, stderr) {
-    console.log(stdout);
-    });
-    var child_process = require('child_process');
+    window.location.href = "http://localhost:3001/";
 
-    child_process.exec('server_board_launch.bat', function(error, stdout, stderr) {
-    console.log(stdout);
-    });
  };
 
 document.getElementById("clickMe2").onclick = function () {
+   
+    window.location.href = "http://localhost:3000" ;
 
-    var child_process = require('child_process');
-
-child_process.exec('server_video.bat', function(error, stdout, stderr) {
-    console.log(stdout);
-});
-var child_process = require('child_process');
-
-child_process.exec('start_video.bat', function(error, stdout, stderr) {
-    console.log(stdout);
-});
 };
 </script>
 
