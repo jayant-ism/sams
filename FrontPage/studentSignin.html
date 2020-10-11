@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>studentSignin</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="icon" href="/Images/favicon.png">
+</head>
+<body  >
+
+    <div id="camera">
+
+        <div class="video-wrap">
+            <video id="video" playsinline autoplay></video>
+        </div>
+        
+        <div class="controller">
+            <button id="snap">Capture</button>
+        </div>
+        
+        <canvas id="canvas"></canvas>
+        <button id="upload">Upload</button>
+        
+</div>
+    
+    <div class="navbar">
+        <ul class="navbarlist">
+            <li class="navbarElements">
+                <a   class="navlink"  href="index.html">Home</a>
+            </li>
+            <li class="navbarElements">
+                <a   class="navlink" href="">Quickstart Guides</a>
+            </li>
+            <li class="navbarElements">
+                <a  class="navlink" href="">About us</a>
+            </li>
+            <li class="navbarElements">
+                <a class="navlink" href="">Contact us</a>
+            </li>
+        </ul>
+    </div>
+ 
+<div class="formArea">
+    
+    <form action="">
+        <label class="formElement" for="name">Enter Your Name</label>
+        <input class="formElement" type="text">
+        <label class="formElement" for="admissionno">Enter Admission No.</label>
+        <input class="formElement" type="text">
+        <label class="formElement" for="classcode">Enter Email ID</label>
+        <input class="formElement" type="email">
+        <label class="formElement" for="classcode">Create Password</label>
+        <input class="formElement" type="password">
+        <label class="formElement" for="classcode">Confirm Password</label>
+        <input class="formElement" type="password">
+         
+
+<button class="formElement createAccount"  onclick="captureImage()">Upload Image</button>
+ <button class="formElement createAccount">Create account</button>
+</form>
+
+
+ <p class="already">Already have an account?<a class=" loginlink" href="studentLogin.html">sign in/log in</a></p>
+
+</div>
+
+ </body>  
+<script src="/JS/index.js"></script>
+
+</html>
