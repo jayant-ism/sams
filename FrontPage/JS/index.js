@@ -7,7 +7,14 @@ location.href="teacherSignin.html";
 function capture(){
     location.href="CameraTesting.html";
 }
-
+function teacherHomepage()
+{
+    location.href="Teacher/teacherHomepage.html";
+}
+function studentHomepage()
+{
+    location.href="Student/index.html";
+}
 
   'use strict';
 

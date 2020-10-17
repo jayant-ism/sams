@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("/Images/blue.jpg");
+    background-size: cover;
+  }
+  #heading1
+  {
+    position: absolute;
+    top: 10%;
+    left:40%;
+    justify-content: right;
+    flex-direction: column;
+    align-items: right;
+    color: white;
+  }
+  #heading2
+  {
+    position: absolute;
+    top: 15%;
+    left:40%;
+    justify-content: right;
+    flex-direction: column;
+    align-items: right;
+    color: white;
+  }
+  .wrapper {
+    position: absolute;
+    top: 30%;
+    left:60%;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+    align-items: right;
+  }
+  .class,
+  .video,
+  .notes,
+  .attendance
+  {
+    width: 50%;
+    margin: 15px 100px;
+  }
+  .btn {
+    background-color: white;
+    border: none;
+    width: 30%;
+    height: 100%;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 10px;
+  }
+
+  .btn:hover {
+    cursor: pointer;
+    background-color: lightskyblue;
+    border-color: transparent;
+  }

@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/images/yellow.jpg");
+  background-size: cover;
+}
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 15%;
+  left: 30%;
+  justify-content: center;
+  align-items: center;
+}
+
+.class,
+.video,
+.notes,
+.quiz {
+  width: 50%;
+  background-color: white;
+  margin: 15px 90px;
+  border-radius: 20px;
+  border: 3px solid white;
+}
+.btn {
+  width: 25%;
+  height: 10%;
+  background-color: #341f97;
+  color: white;
+  border-radius: 30px;
+  border-color: transparent;
+  margin: 50px;
+  position: absolute;
+  font-size: 1.875rem;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: rgb(69, 79, 223);
+  border-color: transparent;
+}
+.image {
+  width: 30%;
+  height: auto;
+  margin: 10px;
+}
