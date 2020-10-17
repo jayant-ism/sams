@@ -37,18 +37,24 @@
   
   const database= firebase.database();
 const rootref= database.ref('attendance');
-
+var flag=0;
 rootref.orderByValue().on('value',snapshot => {
   
   snapshot.forEach(function(userSnapshot){
     console.log(userSnapshot.key);
+    
     if(userSnapshot.val()==1)
+    {
     document.getElementById("present").innerText +=userSnapshot.key+"\n";
+    flag=1;
+    }
   });
+  if(flag==0)
+  document.getElementById("present").innerText +="No one is attending!!";
 //document.write(snapshot.val());
 });
 </script>
-    <h2 id="heading">Attending Now:</h2> 
+    <h1 id="heading">Attending Now:</h1> 
     <br>
     <div class="wrapper1"> 
       <ul>

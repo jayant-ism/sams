@@ -6,16 +6,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    background-image: url("/img/images.jpg");
+    width: 100vw;
+    height: 100vh;
+    background-image: url("img/images.jpg");
     background-size: cover;
-  }
-.dot {
-    height: 10px;
-    width: 10px;
-    background-color: rgb(10, 247, 10);
-    border-radius: 50%;
-    display: inline-block;
   }
   .wrapper1 {
     display: flex;
@@ -23,12 +17,17 @@ body {
     height: 100vh;
     position: absolute;
     top: 20%;
-    left: 40%;
+    left: 50%;
   }
   #heading{
 
     position: absolute;
     top: 10%;
-    left: 40%;
+    left: 50%;
   }
-  
+  #present{
+
+    font-size: x-large;
+    color: green;
+    font-weight: bold;
+  }
