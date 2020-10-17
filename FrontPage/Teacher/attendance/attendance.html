@@ -2,12 +2,15 @@
 <html> 
 <head> 
 <title>Attendance</title> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="http://code.jquery.com/jquery-1.6.2.min.js"></script> 
-<script src="JS/index.js"></script>
+<link rel="stylesheet" href="style.css" />
 </head> 
 <body>
 
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-database.js"></script>
 
@@ -19,26 +22,37 @@
   // Your web app's Firebase configuration
   // For Firebase JS SDK v7.20.0 and later, measurementId is optional
   var firebaseConfig = {
-    apiKey: "AIzaSyCj-eMYFGvom-mLlz_B1blB-K_1KfPZqyE",
-    authDomain: "classroom-dab27.firebaseapp.com",
-    databaseURL: "https://classroom-dab27.firebaseio.com",
-    projectId: "classroom-dab27",
-    storageBucket: "classroom-dab27.appspot.com",
-    messagingSenderId: "122851879969",
-    appId: "1:122851879969:web:80a96c6b92f1d5ebafc760",
-    measurementId: "G-D0FE1EHJ9G"
+    apiKey: "AIzaSyCHQXHIukoX5MdGVH0ayruqAn_kYZjWwsc",
+    authDomain: "classroom-8ab3a.firebaseapp.com",
+    databaseURL: "https://classroom-8ab3a.firebaseio.com",
+    projectId: "classroom-8ab3a",
+    storageBucket: "classroom-8ab3a.appspot.com",
+    messagingSenderId: "316647185202",
+    appId: "1:316647185202:web:3da2876fc7ddcbc2b5552b",
+    measurementId: "G-30LV7BG21C"
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
+  
+  const database= firebase.database();
+const rootref= database.ref('attendance');
+
+rootref.orderByValue().on('value',snapshot => {
+  
+  snapshot.forEach(function(userSnapshot){
+    console.log(userSnapshot.key);
+    if(userSnapshot.val()==1)
+    document.getElementById("present").innerText +=userSnapshot.key+"\n";
+  });
+//document.write(snapshot.val());
+});
 </script>
     <h2 id="heading">Attending Now:</h2> 
     <br>
     <div class="wrapper1"> 
       <ul>
-        <li>Neha</li>
-        <li>Nirupama</li>
-        <li>Jayant</li>
+        <p id="present"></p>
       </ul>
         
     </div>
