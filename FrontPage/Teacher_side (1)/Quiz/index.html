@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>quiz</title>
+    <!-- include style.css-->
+    <link rel="stylesheet" href="dist/css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="welcome_text">
+        <form
+          class="welcome_form"
+          name="welcome_form"
+          onsubmit="startQuiz(event)"
+        >
+          <label for="fname">Enter your name</label>
+          <input type="text" name="fname" />
+
+          <label for="faddno">Enter your Admission No.</label>
+          <input type="text" name="faddno" />
+          <br />
+          <button type="submit">Start Quiz</button>
+        </form>
+      </div>
+    </div>
+
+    <!--js file-->
+    <script src="js/quiz.js"></script>
+  </body>
+</html>

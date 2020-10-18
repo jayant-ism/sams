@@ -1,0 +1,132 @@
+* {
+    margin: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  .wrapper {
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+#heading
+{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+}
+.duration
+{
+  margin: auto;
+  width: 90%;
+  background-color: rgb(9, 159, 228);
+  padding: 10px;
+  text-align: center;
+}
+#appt
+{
+    margin: 0.5%;
+    width: 20%;
+    height:8%;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    border-radius: 50px;
+}
+#code
+{
+  color: white;
+  font-weight: bolder;
+  font-style: inherit;
+}
+#box{
+    margin: auto;
+    width: 90%;
+    background-color: rgb(9, 159, 228);
+    padding: 10px;
+    text-align: center;
+  }
+#question{
+    margin: auto;
+    width: 90%;
+    height:10%;
+    border: 3px solid black;
+    padding: 10px;
+    text-align: center;
+    border-radius: 100px;
+} 
+#option,
+#answer{
+    margin: 0.5%;
+    width: 50%;
+    height:10%;
+    border: 2px solid black;
+    padding: 10px;
+    text-align: center;
+    border-radius: 100px;
+} 
+.buttons{
+    margin: auto;
+    width: 30%;
+    padding: 10px;
+    align-items: center;
+  }
+  #btn_del{
+    width: 20%;
+    height: 35px;
+    background-color:red;
+    color: white;
+    border-radius: 100px;
+    border-color: transparent;
+  }
+  #btn_del:hover{
+    cursor: pointer;
+    background-color: pink;
+    border-color: transparent;
+  }
+  #btn_add,
+  #submit{
+    width: 100%;
+    height: 35px;
+    background-color: rgb(9, 159, 228);
+    color: white;
+    border-radius: 100px;
+    border-color: transparent;
+  }
+  
+  #btn_add:hover,
+  #submit:hover{
+    cursor: pointer;
+    background-color: lightblue;
+    border-color: transparent;
+  }
+
+  .icon {
+
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  z-index: 15;
+  top: 30%;
+  left: 60%;
+  margin: -100px 0 0 -150px;
+  color:white;
+  font-size: 200px;
+  }
+
+  .finish
+  {
+    color: white;
+    font-size: 30px;
+  }
+  .wrapper_end {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 90vh;
+    background-color: rgb(98, 226, 98);
+  }

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>class</title>
+    <!-- adding css file-->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="class">
+        <img class="image" src="images/class.jpg" alt="image" />
+
+        <button class="btn" id="clickMe1" >Class</button>
+      </div>
+      <div class="video">
+        <img class="image" src="images/video.jpg" alt="image" />
+        <button class="btn" id ="clickMe2">Video Lecture</button>
+      </div>
+
+      <div class="notes">
+        <img class="image" src="images/notes.jpg" alt="image" />
+        <button class="btn" id= "clickMe3" >Quiz</button>
+      </div>
+
+      
+
+
+
+    </div>
+
+    <script>
+
+      document.getElementById("clickMe1").onclick = function () {
+          
+      
+          window.location.href = "http://localhost:3001/";
+      
+       };
+      
+      document.getElementById("clickMe2").onclick = function () {
+         
+          window.location.href = "http://localhost:3000" ;
+      
+      };
+      document.getElementById("clickMe3").onclick = function () {
+         
+          window.location.href = "Quiz/index.html" ;
+      
+      };
+
+      
+      </script>
+      
+
+      
+
+  </body>
+</html>
