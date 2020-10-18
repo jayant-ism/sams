@@ -2,7 +2,10 @@
 
 function attendance()
 {
-    location.href="attendance/attendance.html";
+    //location.href="attendance/attendance.html";
+    //$('#save-btn').click(function () {
+        window.open("attendance/attendance.html");
+    //});
 }
 function makeQuiz()
 {
@@ -14,5 +17,6 @@ function board()
 }
 function videoLecture()
 {
-    window.location.href = "http://localhost:3000" ;
+    //window.location.href = "http://localhost:3000" ;
+    window.open("http://localhost:3000");
 }
