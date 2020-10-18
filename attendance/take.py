@@ -15,12 +15,6 @@ known_face_encodings = [
 known_face_names = [
  ]
 
-obama_image = face_recognition.load_image_file("obama.jpg")
-obama_face_encoding = face_recognition.face_encodings(obama_image)[0]
-
-known_face_encodings.append(obama_face_encoding)
-known_face_names.append("obama" )
-
 for i in data.keys() :
     obama_image = face_recognition.load_image_file(data[i])
     obama_face_encoding = face_recognition.face_encodings(obama_image)[0]
